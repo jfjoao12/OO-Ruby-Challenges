@@ -1,9 +1,7 @@
 class Grains
   def self.square(number)
-
-    (1..64).each { |number| puts "Square #{number}: #{2**(number)}" }
+      2**(number-1)
   end
 end
 
-
-#test
+puts Grains.square(3)
